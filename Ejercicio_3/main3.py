@@ -2,10 +2,10 @@
 Escribe un programa que sea capaz de mostrar los números del 1 al 100 en orden inverso.
 
 """
-print("Programa que muestra el orden inverso de una lista de numeros. Luego de introducir el dato solicitado, presione Enter ")
+print("Programa que muestra el orden inverso de una lista de numeros del 1 al 100.")
 print()
-primer = int(input("Inicia en: "))
-ultimo = int(input("Finaliza en: "))
+primer = 1
+ultimo = 100
 listaOrdenada = [primer]
 
 listaInversa = []
@@ -16,13 +16,15 @@ def crearLista2(primer, ultimo):
     while i < ultimo:
         i = i + 1
         listaOrdenada.append(i)
-    print("Su lista de numeros es: ", listaOrdenada)
+    print("Lista Ordenada: ", listaOrdenada)
 
 
 def listaInvertida(listaOrdenada):
     listaInversa = list(reversed(listaOrdenada))
-    print("Su lista en orden inverso: ", listaInversa)
+    print("Lista Invertida: ", listaInversa)
 
 
 crearLista2(primer, ultimo)
+print()
+print()
 listaInvertida(listaOrdenada)
